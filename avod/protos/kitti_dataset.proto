@@ -5,7 +5,7 @@ import "avod/protos/kitti_utils.proto";
 message KittiDatasetConfig {
 
     // Unique name for dataset
-    optional string name = 1 [default = "kitti"];
+    optional string name = 1 [default = "fakepath"];
 
     // Top level directory of the dataset
     optional string dataset_dir = 2 [default = "~/Kitti/object"];
@@ -18,6 +18,8 @@ message KittiDatasetConfig {
 
     // Whether the samples have labels
     optional bool has_labels = 5 [default = true];
+
+    optional string ground_plane = 11 [default = 'ground'];
 
     // The data split to be used for calculating clusters (e.g. val split
     // should use the train split for clustering)
