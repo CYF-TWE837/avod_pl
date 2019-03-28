@@ -5,10 +5,10 @@ import "avod/protos/kitti_utils.proto";
 message KittiDatasetConfig {
 
     // Unique name for dataset
-    optional string name = 1 [default = "fakepath"];
+    optional string name = 1 [default = "kitti"];
 
     // Top level directory of the dataset
-    optional string dataset_dir = 2 [default = "~/Kitti/object"];
+    optional string dataset_dir = 2 [default = "~/fakepath"];
 
     // Split for the data (e.g. 'train', 'val')
     optional string data_split = 3 [default = "train"];
